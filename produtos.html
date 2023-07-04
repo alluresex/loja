@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .carousel-container {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-images {
+      display: flex;
+      transition: transform 1s ease;
+    }
+
+    .carousel-image {
+      flex: 0 0 100%;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      20% {
+        transform: translateX(-100%);
+      }
+      40% {
+        transform: translateX(-200%);
+      }
+      60% {
+        transform: translateX(-300%);
+      }
+      80% {
+        transform: translateX(-200%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .carousel-images.animate {
+      animation: slide 10s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel-images animate">
+      <img class="carousel-image" src="image1.jpg" alt="Imagem 1">
+      <img class="carousel-image" src="image2.jpg" alt="Imagem 2">
+      <img class="carousel-image" src="image3.jpg" alt="Imagem 3">
+      <img class="carousel-image" src="image4.jpg" alt="Imagem 4">
+    </div>
+  </div>
+
+  <!-- Resto do conteúdo da página -->
+
+</body>
+</html>
